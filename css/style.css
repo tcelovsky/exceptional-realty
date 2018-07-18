@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css?family=Clicker+Script')
+
+/* CSS Syntax
+selector {
+  property: value;
+  property: value;
+}
+*/
+
+/* Type Selector */
+p {/* select all <p> */
+  font-size: 16px; /* 16px, ?pt, 100%, 1em */
+  line-height: 1.5em;
+}
+
+figcaption {
+  /* font-weight: normal;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  font-family: Georgia, "New Times Roman", serif; */
+  font: normal 0.75em/1.5em Georgia, "New Times Roman", serif;
+  color: #777;
+  text-align: right;
+}
+
+/* Class Selector (applied to as many elements as you like) */
+.milk-text {/* select elements with class milk-text */
+  font: bold 2.6em 'Elsie Swash Caps', cursive;
+  color: white;
+  text-shadow: 0 2px 3px #000;
+}
+
+/* ID selector (apply to one unique element per page) */
+#logo {/* select elements with ID 'logo' */
+  background: aqua;
+}
+
+/* Descendent Selector */
+#logo h1 {/* selects <h1> if inside element with id=logo */
+font-family: 'Clicker Script', cursive;
+}
+#logo h2 {
+  font-family: 'Elsie Swash Caps', cursive;
+}
+
+/* Pseudo selectors */
+#details a:link {
+  color: blue;
+  text-decoration: underline;
+}
+#details a:visited {
+  color: purple;
+  text-decoration: underline;
+}
+#details a:hover {
+  color: red;
+  text-decoration: underline;
+}
+#details a:active {
+  color: red;
+  text-decoration: none;
+}
+
